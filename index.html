@@ -1,88 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="Malik Abdul Hanan - Creative Editor Portfolio">
-<title>Malik Abdul Hanan | Creative Editor</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Malik Abdul Hanan — Professional Video Editor & Content Editor">
+<title>Malik Abdul Hanan | Video Editor</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#080b12;color:#f5f7fb;line-height:1.6}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:fixed;inset:0 0 auto;z-index:9;background:#080b12dd;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff12}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:20px;font-weight:800}.logo i{color:#7c5cff;font-style:normal}
+.links{display:flex;gap:25px;color:#aeb5c5;font-size:14px;font-weight:600}.links a:hover{color:white}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;overflow:hidden;position:relative}
+.glow{position:absolute;width:480px;height:480px;border-radius:50%;background:#6948ef;filter:blur(150px);opacity:.18;right:-120px;top:50px}
+.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}
+.badge{display:inline-block;padding:8px 13px;border:1px solid #7c5cff66;border-radius:50px;color:#c5bcff;background:#7c5cff12;font-size:11px;font-weight:800;letter-spacing:.8px;margin-bottom:20px}
+h1{font-size:clamp(45px,7vw,78px);line-height:1.02;letter-spacing:-4px;margin-bottom:20px}
+h1 span{background:linear-gradient(100deg,#fff,#9b8aff);-webkit-background-clip:text;color:transparent}
+.hero p{font-size:18px;color:#aeb5c5;max-width:650px;margin-bottom:28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 20px;border-radius:12px;font-weight:700;font-size:14px;border:1px solid #303746;transition:.2s}.primary{background:#7c5cff;border-color:#7c5cff}.secondary{background:#111620}.btn:hover{transform:translateY(-2px)}
+.profile{height:400px;border:1px solid #ffffff12;border-radius:28px;background:linear-gradient(145deg,#121827,#0c1018);display:grid;place-items:center;position:relative;box-shadow:0 25px 70px #0008}
+.avatar{width:180px;height:180px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#7c5cff,#22c6ff);font-size:52px;font-weight:800;box-shadow:0 0 80px #7c5cff4d}
+.float{position:absolute;padding:11px 14px;border:1px solid #ffffff15;background:#141924ee;border-radius:13px;font-size:12px;color:#dce1ea}.f1{top:32px;left:22px}.f2{bottom:35px;right:18px}
+section{padding:90px 0}.tag{color:#907dff;font-size:11px;text-transform:uppercase;letter-spacing:2px;font-weight:800;margin-bottom:8px}.title{font-size:38px;letter-spacing:-1.5px;margin-bottom:10px}.sub{color:#9da5b6;max-width:650px}
+.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px}.card,.skill,.contact a{background:#0e131d;border:1px solid #202735;border-radius:19px}.card{padding:27px}.card p{color:#aab1c0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.stat{background:#0a0f17;border:1px solid #1e2532;border-radius:13px;padding:16px}.stat b{font-size:24px;display:block}.stat small{color:#8992a4;font-size:11px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:32px}.skill{padding:25px}.icon{font-size:26px;margin-bottom:13px}.skill h3{margin-bottom:6px}.skill p{color:#8f97a8;font-size:13px}
+.tools{display:flex;flex-wrap:wrap;gap:11px;margin-top:25px}.tool{padding:12px 16px;border-radius:12px;background:#111722;border:1px solid #252e3d;color:#dce2ed;font-weight:600;font-size:13px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:30px}.contact a{display:flex;align-items:center;gap:13px;padding:18px;transition:.2s}.contact a:hover{border-color:#7c5cff}.contact b{display:block;font-size:14px}.contact span{color:#8992a4;font-size:11px}
+footer{padding:32px 0;border-top:1px solid #1c2330;color:#7f8898;font-size:12px}
+@media(max-width:800px){.links{display:none}.grid,.about,.contact{grid-template-columns:1fr}.hero{padding-top:115px}.profile{height:330px}.skills{grid-template-columns:1fr}.hero p{font-size:16px}h1{letter-spacing:-2.5px}.stats{grid-template-columns:repeat(3,1fr)}}
+</style></head>
 <body>
-<header>
-  <a href="#home" class="brand">MAH<span>.</span></a>
-  <button id="menu" aria-label="Menu">☰</button>
-  <nav id="nav">
-    <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
-    <a href="#experience">Experience</a><a href="#contact">Contact</a>
-  </nav>
-</header>
+<nav><div class="wrap nav"><a class="logo" href="#home">MAH<i>.</i></a><div class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Services</a><a href="#tools">Tools</a><a href="#contact">Contact</a></div></div></nav>
 
-<section id="home" class="hero">
-  <div>
-    <div class="badge">CREATIVE EDITOR</div>
-    <h1>Malik Abdul<br><em>Hanan</em></h1>
-    <p class="lead">Blog Editor • Video Editor • Event Video Editor</p>
-    <p class="sub">Turning raw ideas and footage into clean, engaging and professional content.</p>
-    <div class="actions">
-      <a class="btn main" href="#contact">Hire Me</a>
-      <a class="btn" href="#skills">My Skills</a>
-    </div>
-  </div>
-  <div class="profile">
-    <div class="circle">MAH</div>
-    <h2>Malik Abdul Hanan</h2>
-    <p>3 Years Experience</p>
-    <div class="mini"><span><b>25</b><small>Age</small></span><span><b>3+</b><small>Years</small></span></div>
-  </div>
-</section>
+<header class="hero" id="home"><div class="glow"></div><div class="wrap grid">
+<div><div class="badge">AVAILABLE FOR FREELANCE WORK</div>
+<h1>Malik Abdul<br><span>Hanan.</span></h1>
+<p>Professional Video Editor & Content Editor creating clean, engaging and social-media-ready videos with 3 years of hands-on experience.</p>
+<div class="btns"><a class="btn primary" href="#contact">Let's Work Together →</a><a class="btn secondary" href="#skills">View Services</a></div></div>
+<div class="profile"><div class="avatar">MAH</div><div class="float f1">🎬 Video Editing</div><div class="float f2">✦ 3 Years Experience</div></div>
+</div></header>
 
-<section id="about">
-  <div class="title"><small>ABOUT ME</small><h2>Creative work. Clean results.</h2></div>
-  <div class="grid about">
-    <div class="box"><h3>Who I Am</h3><p>I am Malik Abdul Hanan, a creative editor with 3 years of practical experience. I specialize in blog editing, video editing and event video editing, with a focus on attractive presentation and smooth storytelling.</p></div>
-    <div class="box details">
-      <p><span>Name</span><b>Malik Abdul Hanan</b></p>
-      <p><span>Age</span><b>25</b></p>
-      <p><span>Education</span><b>Matriculation</b></p>
-      <p><span>Work</span><b>Creative Editor</b></p>
-    </div>
-  </div>
-</section>
+<section id="about"><div class="wrap about"><div><div class="tag">About Me</div><div class="title">Turning raw clips into stories.</div></div>
+<div class="card"><p>I'm <b>Malik Abdul Hanan</b>, a 25-year-old editor focused on video editing, event videos and blog/content editing. I work primarily on mobile using <b>CapCut</b> and <b>Alight Motion</b>, with a focus on smooth cuts, engaging pacing and polished social content.</p>
+<div class="stats"><div class="stat"><b>3+</b><small>Years Experience</small></div><div class="stat"><b>25</b><small>Years Old</small></div><div class="stat"><b>2</b><small>Core Tools</small></div></div></div></div></section>
 
-<section id="skills">
-  <div class="title"><small>WHAT I DO</small><h2>My Skills</h2></div>
-  <div class="grid cards">
-    <article class="card"><div>✍️</div><h3>Blog Editing</h3><p>Clean, readable and engaging content with attention to detail.</p></article>
-    <article class="card"><div>🎥</div><h3>Video Editing</h3><p>Creative cuts, transitions, timing and visual polish for modern content.</p></article>
-    <article class="card"><div>🎬</div><h3>Event Video Editing</h3><p>Professional highlights that turn important moments into memorable videos.</p></article>
-  </div>
-  <div class="box tools"><h3>Tools I Use</h3><span>Alight Motion</span><span>CapCut</span><span>Mobile Editing</span></div>
-</section>
+<section id="skills"><div class="wrap"><div class="tag">What I Do</div><div class="title">Editing services</div><p class="sub">From social content to memorable event videos, I turn footage into content people want to watch.</p>
+<div class="skills"><div class="skill"><div class="icon">🎞️</div><h3>Video Editing</h3><p>Clean cuts, transitions, pacing, captions and polished visual flow for engaging videos.</p></div>
+<div class="skill"><div class="icon">📝</div><h3>Blog Editing</h3><p>Content-focused editing that keeps your message clear, attractive and easy to follow.</p></div>
+<div class="skill"><div class="icon">🎉</div><h3>Event Video Editing</h3><p>Highlight videos and memorable edits for events, celebrations and special moments.</p></div></div></div></section>
 
-<section id="experience">
-  <div class="title"><small>MY JOURNEY</small><h2>Experience & Education</h2></div>
-  <div class="timeline">
-    <div><b>3 YEARS EXPERIENCE</b><h3>Creative Editing</h3><p>Blog editing, video editing and event video editing.</p></div>
-    <div><b>EDUCATION</b><h3>Matriculation</h3><p>Building practical creative skills through hands-on mobile editing.</p></div>
-  </div>
-</section>
+<section id="tools"><div class="wrap"><div class="tag">My Toolkit</div><div class="title">Tools I use</div><div class="tools"><div class="tool">◈ CapCut</div><div class="tool">✦ Alight Motion</div><div class="tool">📱 Mobile Editing</div><div class="tool">🎬 Social Video</div></div></div></section>
 
-<section id="contact">
-  <div class="title"><small>GET IN TOUCH</small><h2>Let's work together.</h2></div>
-  <div class="contact box">
-    <p>For editing work and projects, contact me directly:</p>
-    <a href="tel:03131520210">📞 0313-1520210</a>
-    <a href="tel:03223437401">📞 0322-3437401</a>
-    <a href="mailto:malikabdulhanan369@gmail.com">✉️ malikabdulhanan369@gmail.com</a>
-    <div class="social">
-      <a target="_blank" rel="noopener" href="https://www.tiktok.com/@malik.abdul.hanan00?_r=1&_t=ZN-99NYcpSZLG7">TikTok</a>
-      <a target="_blank" rel="noopener" href="https://www.instagram.com/malik.abdul.hanan?igsi=MWQyZGZ3OTY1NTA3Zg==">Instagram</a>
-      <a target="_blank" rel="noopener" href="https://www.facebook.com/share/1BdbRoaKCm/">Facebook</a>
-    </div>
-  </div>
-</section>
+<section id="contact"><div class="wrap"><div class="tag">Get In Touch</div><div class="title">Let's create something great.</div><p class="sub">Ready to discuss an editing project? Contact me directly or connect through social media.</p>
+<div class="contact">
+<a href="tel:03131520210">📞 <div><b>0313-1520210</b><span>Call / WhatsApp</span></div></a>
+<a href="tel:03223437401">📱 <div><b>0322-3437401</b><span>Call / WhatsApp</span></div></a>
+<a href="mailto:malikabdulhanan369@gmail.com">✉️ <div><b>Email Me</b><span>malikabdulhanan369@gmail.com</span></div></a>
+<a href="https://www.tiktok.com/@malik.abdul.hanan00" target="_blank">♪ <div><b>TikTok</b><span>@malik.abdul.hanan00</span></div></a>
+<a href="https://www.instagram.com/malik.abdul.hanan" target="_blank">◎ <div><b>Instagram</b><span>@malik.abdul.hanan</span></div></a>
+<a href="https://www.facebook.com/share/1BdbRoaKCm/" target="_blank">f <div><b>Facebook</b><span>Connect with me</span></div></a>
+</div></div></section>
 
-<footer>© <span id="year"></span> Malik Abdul Hanan • Creative Editor</footer>
-<script src="script.js"></script>
-</body>
-</html>
+<footer><div class="wrap">© 2026 Malik Abdul Hanan · Professional Video Editor</div></footer>
+</body></html>
